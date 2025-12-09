@@ -111,7 +111,7 @@ const ReviewCards = () => {
         <h3 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold font-poppins">What people are saying</h3>
         <span className="text-neutral-300 text-sm xl:text-base 2xl:text-lg max-w-xl 2xl:max-w-2xl">
                     Don&apos;t just take our word for it. Here&apos;s what <strong>real people</strong> are saying about AlteraSMS in our{" "}
-          <LinkPreview url="https://discord.gg/alterasms">
+          <LinkPreview url="https://discord.gg/zhFkq6pb4f">
                         Discord Server
                     </LinkPreview>.
                 </span>

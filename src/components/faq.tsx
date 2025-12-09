@@ -49,7 +49,7 @@ const FAQ = () => {
                     <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold font-poppins">Frequently asked questions</h2>
                     <span className="mt-4 text-neutral-300 text-sm xl:text-base 2xl:text-lg">
                         Can’t find the answer you’re looking for? Reach out to our customer support team through{' '}
-                        <LinkPreview url="https://discord.gg/alterasms">
+                        <LinkPreview url="https://discord.gg/zhFkq6pb4f">
                             Discord
                         </LinkPreview>.
                     </span>

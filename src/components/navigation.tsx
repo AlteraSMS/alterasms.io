@@ -84,7 +84,7 @@ const Navigation = ({ currentPath }: { currentPath: string}) => {
               tabIndex={scrolled ? -1 : undefined}
             >
               <a
-                href="https://discord.gg/alterasms"
+                href="https://discord.gg/zhFkq6pb4f"
                 target="_blank"
                 className={buttonVariants({ variant: "ghost", size: "icon" })}
               >

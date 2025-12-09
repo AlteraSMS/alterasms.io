@@ -55,7 +55,7 @@ const items = [
       <div className="text-neutral-200">
         Connect with over 1500 websites and services across 150+ countries through our platform. Can&apos;t find what you need? Reach
         out on our{" "}
-        <LinkPreview url="https://discord.gg/alterasms">
+        <LinkPreview url="https://discord.gg/zhFkq6pb4f">
           Discord server
         </LinkPreview>
         , and we&apos;ll work to add your requested service.
