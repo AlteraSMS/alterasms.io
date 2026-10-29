@@ -3,7 +3,6 @@ import "@/styles/global.css"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer.astro"
 
-const currentPath = Astro.url.pathname
 ---    
 
 <html lang="en">
@@ -34,7 +33,7 @@ const currentPath = Astro.url.pathname
 		<meta name="twitter:card" content="summary_large_image">
 	</head>
 	<body>
-		<Navigation client:load currentPath={currentPath} />
+		<Navigation client:load />
 		<slot />
 		<Footer />
 	</body>

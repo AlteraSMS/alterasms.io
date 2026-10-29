@@ -4,7 +4,6 @@ import {
   motion,
 } from "motion/react"
 import { useEffect, useRef, useState } from "react"
-import LinkPreview from "@/components/custom/link-preview"
 import AnimatedSteps from "@/components/custom/animated-steps"
 import ServiceCloud from "@/components/custom/service-cloud"
 import CommunicationModel from "@/components/custom/communication-model"
@@ -55,10 +54,7 @@ const items = [
       <div className="text-neutral-200">
         Connect with over 1500 websites and services across 150+ countries through our platform. Can&apos;t find what you need? Reach
         out on our{" "}
-        <LinkPreview url="https://discord.gg/zhFkq6pb4f">
-          Discord server
-        </LinkPreview>
-        , and we&apos;ll work to add your requested service.
+Discord server, and we&apos;ll work to add your requested service.
       </div>
     ),
     rightcontent: (

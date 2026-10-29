@@ -4,7 +4,6 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
-import LinkPreview from "@/components/custom/link-preview"
 
 const faqs = [
     {
@@ -36,7 +35,7 @@ const faqs = [
     },
     {
         question: 'How do I get started with AlteraSMS?',
-        answer: 'Getting started with AlteraSMS is quick and easy. Begin by visiting our registration page at https://dash.alterasms.io/register to create your account. Once registered, simply log in to access your personalized dashboard. From there, you can deposit funds and start managing your SMS needs. Your dashboard serves as your control center for all AlteraSMS services, putting everything you need at your fingertips.'
+        answer: 'Getting started with AlteraSMS is quick and easy. Begin by registering an account. Once registered, simply log in to access your personalized dashboard. From there, you can deposit funds and start managing your SMS needs. Your dashboard serves as your control center for all AlteraSMS services, putting everything you need at your fingertips.'
     }
 ]
 
@@ -49,9 +48,7 @@ const FAQ = () => {
                     <h2 className="text-3xl sm:text-4xl 2xl:text-5xl font-bold font-poppins">Frequently asked questions</h2>
                     <span className="mt-4 text-neutral-300 text-sm xl:text-base 2xl:text-lg">
                         Can’t find the answer you’re looking for? Reach out to our customer support team through{' '}
-                        <LinkPreview url="https://discord.gg/zhFkq6pb4f">
-                            Discord
-                        </LinkPreview>.
+Discord.
                     </span>
                 </div>
                 <div className="mt-10 lg:col-span-7 lg:mt-0">

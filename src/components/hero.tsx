@@ -28,10 +28,9 @@ const Hero = () => {
                 <div
                     className="flex flex-col gap-4 md:gap-0 2xl:gap-y-4 px-4 text-white max-w-4xl 2xl:max-w-5xl leading-relaxed lg:leading-snug text-center mx-auto">
                     <div className="flex items-center justify-center">
-                        <a
-                            href="https://dash.alterasms.io"
+                        <div
                             className={cn(
-                                "group rounded-full border  border-white/5 bg-zinc-900 text-base text-white transition-all ease-in hover:cursor-pointer hover:bg-zinc-800",
+                                "group rounded-full border  border-white/5 bg-zinc-900 text-base text-white transition-all ease-in hover:bg-zinc-800",
                             )}
                         >
                             <ShinyBanner className="flex flex-row gap-x-2 items-center justify-center transition ease-out hover:text-zinc-600 hover:duration-300 hover:dark:text-zinc-400">
@@ -39,7 +38,7 @@ const Hero = () => {
                                 <span>Get your secure number now</span>
                                 <MoveRight className="ml-1 w-auto h-3 sm:h-5 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5"/>
                             </ShinyBanner>
-                        </a>
+                        </div>
                     </div>
                     <div className="flex flex-col gap-10">
                         <div className="flex flex-col gap-y-3 2xl:gap-y-8 justify-center items-center">
@@ -56,15 +55,16 @@ const Hero = () => {
                             </h3>
                         </div>
                         <div className="flex flex-row gap-4 max-w-sm mx-auto">
-                            <a
-                                href="https://dash.alterasms.io/login"
-                                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-300 disabled:pointer-events-none disabled:opacity-50 bg-gray-50 text-gray-900 hover:bg-gray-50/90 shadow px-4"
+                            <span
+                                className="group/disc relative overflow-hidden inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium transition-colors bg-gray-50 text-gray-900 hover:bg-gray-50/90 shadow px-4 cursor-not-allowed"
                             >
                                 Sign In
-                            </a>
-                            <a href="https://dash.alterasms.io/register">
-                                <ShinyButton text="Get Started" className=""/>
-                            </a>
+                                <DiscontinuedBanners/>
+                            </span>
+                            <span className="group/disc relative overflow-hidden rounded-lg cursor-not-allowed">
+                                <ShinyButton text="Get Started" className="pointer-events-none"/>
+                                <DiscontinuedBanners/>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -72,5 +72,21 @@ const Hero = () => {
         </HeroHighlight>
     )
 }
+
+const DiscontinuedBanners = () => (
+    <>
+        {["-rotate-[20deg]", "rotate-[20deg]"].map((rotate) => (
+            <span
+                key={rotate}
+                className={cn(
+                    "pointer-events-none absolute left-1/2 top-1/2 w-[200%] -translate-x-1/2 -translate-y-1/2 bg-red-600 py-0.5 text-center text-[10px] font-bold uppercase tracking-widest text-white opacity-0 transition-opacity duration-200 group-hover/disc:opacity-100",
+                    rotate
+                )}
+            >
+                Discontinued
+            </span>
+        ))}
+    </>
+)
 
 export default Hero
